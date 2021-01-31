@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap');
+
+
+.contents{
+    width: 1280px;
+    margin: auto;
+}
+header{
+    position: absolute;
+    /* position: fixed; */
+    width: 100%;
+}
+nav{
+    display:flex;
+    width: 1280px;
+    margin: auto;
+    justify-content: space-between;
+    border: 1px solid #000;
+}
+.gnb{
+    display:flex;
+}
+.gnb li{
+    margin: 20px;
+}
+.gnb li a:last-child(){
+    margin-right: 0;
+}
+.gnb li a{
+    color: #fff;
+}
+
+.logo a{
+    line-height: 64px;
+}
+
+.logo img{
+    width: 48px;
+    height: 64px;
+
+}
+
+.home{
+    display: flex;
+    height: 100vh;
+    background: url('../images/full.jpg') no-repeat center center;
+    background-size: 100% 100%;
+}
+.heading{
+    text-align: center;
+    color: #fff;
+}
+.heading h1{
+    font-size: 56px;
+    padding-bottom: 70px;
+}
+.heading p{
+    font-size: 22px;
+
+}
+
+.aboutme{
+    border: 1px solid #000;
+    padding: 100px 0 ;
+}
+.aboutme.photo{   }
+.aboutme.photo img{   }
+
+.aboutme.desc{}
+.aboutme.desc h3{}
+.aboutme.desc p{}
+
