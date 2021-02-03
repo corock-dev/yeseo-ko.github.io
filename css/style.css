@@ -15,7 +15,7 @@ nav{
     width: 1280px;
     margin: auto;
     justify-content: space-between;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 .gnb{
     display:flex;
@@ -23,27 +23,30 @@ nav{
 .gnb li{
     margin: 20px;
 }
-.gnb li a:last-child(){
+.gnb li:last-child{
     margin-right: 0;
 }
 .gnb li a{
     color: #fff;
 }
 
-.logo a{
-    line-height: 64px;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo img{
-    width: 48px;
-    height: 64px;
+    width: 64px;
+    height: 48px;
+    margin-left:20px;
+    /* border: 1px solid #000; */
 
 }
 
 .home{
     display: flex;
     height: 100vh;
-    background: url('../images/full.jpg') no-repeat center center;
+    background: url('../images/full3.jpg') no-repeat center center;
     background-size: 100% 100%;
 }
 .heading{
@@ -60,7 +63,7 @@ nav{
 }
 
 .aboutme{
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     padding: 100px 0 ;
 }
 .aboutme.photo{   }
