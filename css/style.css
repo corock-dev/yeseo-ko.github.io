@@ -116,6 +116,7 @@ nav{
     color: #fff;
     padding: 15px 30px;
     background: linear-gradient(90deg, #472fa7, #5331ad, #dc87e5);
+    z-index: 1;
 }
 .call-to-action h2{
     margin-bottom: 50px;
@@ -127,7 +128,7 @@ nav{
 .responsive div{
     width: 800px;
     height: 500px;
-    border-radius: 0 20% 0 20%;
+    border-radius: 0 10% 0 10%;
     border: 1px solid #000;
 }
 
