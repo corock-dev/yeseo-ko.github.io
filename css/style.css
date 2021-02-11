@@ -86,8 +86,8 @@ nav{
 .desc>h3 span{
     font-size: 12px;
 }
-.desc ul li span{
-    font-size: 12px;
+.desc dt{
+    font-size: 20px;
     color: #a0a0a0;
 }
 
