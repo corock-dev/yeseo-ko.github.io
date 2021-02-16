@@ -37,8 +37,8 @@ nav{
 }
 
 .logo img{
-    width: 64px;
-    height: 48px;
+    width: 72px;
+    height: 55px;
     margin-left:20px;
     /* border: 1px solid #000; */
 
@@ -48,6 +48,7 @@ nav{
     display: flex;
     height: 100vh;
     background: url('../images/full3.jpg') no-repeat center center;
+    background: url('../images/ani.gif') no-repeat center center;
     background-size: 100% 100%;
 }
 .heading{
