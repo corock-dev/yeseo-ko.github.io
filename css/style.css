@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 .contents{
     width: 1280px;
@@ -16,7 +16,7 @@ nav{
     width: 1280px;
     margin: auto;
     justify-content: space-between;
-    /* border: 1px solid #000; */
+
 }
 .gnb{
     display:flex;
@@ -63,37 +63,125 @@ nav{
     font-size: 22px;
 
 }
+/* 풀배경으로 가야하는 레이아웃 */
+.FullScreen{
+    height:100vh;
+}
 /*내 프로필영역 */
+.s2{
+    background: url('../images/bg_gray.png') no-repeat center center;
+}
+
 .aboutme{
     display: flex;
     flex:5;
-    padding: 100px 0 ;
+    align-items: center;
+    height: 100vh;
+    
 }
+/* 프로필사진영역 */
 .photo{
     flex:2;
-    margin-right: 120px;
+    margin-right:220px;
+    position: relative;
+    
    }
 .photo img{
     width: 100%;
     height: 500px;
-    border-radius: 61% 39% 52% 48% / 60% 33% 67% 40%    ;
-    
+    border-radius: 61% 39% 52% 48% / 60% 33% 67% 40%    ;  
    }
-
+.photo span:nth-child(1){
+    height: 441px;
+    width: 413px;
+    border: 4px dotted rgba(71, 47, 168, 0.286);
+    position: absolute;
+    bottom: 15%;
+    left: -2%;
+    border-radius: 48% 52% 61% 39% / 44% 55% 45% 56%;
+    z-index: -1;
+}
+.photo span:nth-child(2){
+    height: 372px;
+    width: 413px;
+    background:  #472fa85d ;
+    position: absolute;
+    bottom: 0%;
+    left: -7%;
+    border-radius: 48% 52% 61% 39% / 44% 55% 45% 56%;
+    z-index: -1;
+}
+.photo span:nth-child(3){
+    height: 40px;
+    width: 50px;
+    background: #f1a9d7af;
+    background-image: radial-gradient(rgb(255, 255, 255) 20%, transparent 0), radial-gradient(rgb(255, 255, 255) 20%, transparent 0);
+    background-position: 0 0, 10px 10px;
+    background-size: 10px 10px;
+    position: absolute;
+    bottom: 4%;
+    left: 82%;
+    border-radius: 48% 52% 61% 39% / 44% 55% 45% 56%;
+    z-index: -1;
+}
+/* 프로필내용영역 */
 .desc{
     flex:3;
 }
-
-.desc>h3 span{
-    font-size: 12px;
+/* about me 타이틀 */
+.abm_title{
+    position: relative;
 }
+.abm_title h1{
+    font-size: 42px;
+    color:  #472fa8;
+    font-family: 'Indie Flower', cursive;
+}
+    
+.abm_title span{
+    height: 28px;
+    width: 200px;
+    background: #472fa823;
+    position: absolute;
+    bottom: -74%;
+    border-radius: 34% 66% 46% 54% / 50% 47% 53% 50%  ;
+}
+/* 프로필 내용영역 */
+.desc h3{
+    padding: 28px 0;
+}
+.desc h3 b{
+    font-size: 28px;
+    
+}
+
 .desc dt{
     font-size: 20px;
-    color: #a0a0a0;
+    color: #a8a8a8;
+}
+/* 성격 해시태그 */
+/* 이곳에는 클릭시 꿈틀거리는 효과 넣어보고 싶음 */
+.hashs span{
+    font-size: 14px;
+    padding: 14px;
+    background: #472fa894;
+    border-radius: 20px;
+    color: #fff;
+    margin-right: 16px;
+}
+.hashs span:nth-child(2){
+    background: #ab60dd8e;
+}
+.hashs span:nth-child(3){
+    background: #f1a9d7af;
 }
 
-
 /* 콜투액션  */
+.c-t-a{
+    
+    border: 1px solid #000;
+
+}
 .call-to-action{
     background: url('../images/call.jpg') no-repeat center;
     background-size: cover;
@@ -103,7 +191,6 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }   
 .call-to-action:before{
     content: '';
@@ -121,27 +208,34 @@ nav{
 }
 .call-to-action h2{
     margin-bottom: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
     color: #fff;
     z-index: 1;
 }
 
-/* 슬라이드 */
-.responsive div{
-    width: 800px;
-    height: 500px;
-    border-radius: 0 10% 0 10%;
-    border: 1px solid #000;
-}
 
 /* 프로젝트 */
+.pro{
+    background:
+    background-size: 100% 100%;
+}
 .projects{
     width: 100%;
-    height: 600px;
     border: 1px solid #000;
     display: flex;
     justify-content: center;
 }
 
+/* 프로젝트 슬라이더 */
+.responsive div{
+    width: 1000px;
+    height: 700px;
+    padding-right: 20px;
+    border-radius: 0 10% 0 10%;
+    border: 1px solid rgb(247, 117, 117);
+}
 
 /* 공부 */
 .studies{
@@ -158,25 +252,44 @@ nav{
 
 /* 연락처 */
 .contact{
-    background: rgb(129, 54, 145);
-    height: 200px;
+    background: linear-gradient(180deg, #482fa8, #7641bc);
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.button a{
-    display:inline-block;
+.contact p{
+    color: #fff;
+    font-size: 30px;
+}
+
+.contact span{
+    
+    background: url('../images/luna.png') no-repeat center;
+    width: 40px;
+    height: 45px;
+    background-size: 30px 40px;
+}
+
+/* 버튼디자인 */
+.btns{
+    margin-top: 17px ;
+}
+button{
+    display: inline-block;
     padding: 10px;
     width: 200px;
     margin: 10px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
+    color: #fff;
 }
-.button a:first-child{
-    background-color: rgb(216, 40, 149);
-}
-.button a:last-child{
-    background-color: rgb(216, 40, 149);
+button{
+    background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer}
+    
+button i{
+    color: #fff;
+    padding-right: 5px;
 }

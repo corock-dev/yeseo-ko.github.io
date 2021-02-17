@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -51,16 +52,31 @@
       </main>
 
 <!-- aboutme -->
-      <section>
+      <section class="FullScreen s2">
         <div class="contents">
             <div class="aboutme">
+              <!-- 프로필사진영역 -->
                 <div class="photo">
                     <img src="./images/me.jpg" alt="me">
+                    <div class="dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                 </div>
+                <!-- 프로필 내용영역 -->
                 <div class="desc">
-                    <h3>유예서 <span>91.8.25</span> </h3>
-                    <h2><b>: Yoo Ye Seo</b></h2>
+                    <div class="abm_title">
+                      <h1>" About Me "</h1>
+                      <span></span>
+                    </div>
+
+                    <h3>최선을 다하는 디자이너 <b>유예서</b>입니다.</h3>
+                    
                     <dl>
+                      <dt>Grow</dt>
+                      <dd><span>1991. 8.25</span> 대전광역시 출생</dd>
+                      <br>
                       <dt>Education</dt>
                       <dd><span>2010 ~ 2014</span> 충남대학교 고고학과 졸업</dd>
                       <dd><span>2020</span> 효성직업전문학교 반응형 UI/UX 스마트기기 디자인 과정 수료</dd>
@@ -75,14 +91,21 @@
                       <dd>국가공인 CS Leaders(관리사)</dd>
                       <dd>한자자격능력 2급(대한검정회)</dd>                     
                     </dl>
-                    <h5>#ENFP(재기발랄한 활동가) #창의적인 #외향적인</h5>
+                    <br>
+                    <div class="hashs">
+                      <span>#ENFP(재기발랄한 활동가)</span>
+                      <span>#창의적인</span>
+                      <span>#외향적인</span>
+                    </div>
+                    
+
                 </div>
             </div>
         </div>
       </section>
 
         <!-- 프로젝트 슬라이더 -->
-      <section>
+      <section class="FullScreen pro" >
         <div class="contents">
           <h1>프로젝트</h1>
           <div class="projects">
@@ -141,10 +164,11 @@
 
 
     <!-- 콜투액션 -->
-    <section>
+    <section class="FullScreen c-t-a">
       <div class="call-to-action">
-        <h2>Lorem ipsum dolor <b>it amet</b>s,<br>consectetur adipisicing.</h2>
-        <a href="https://github.com/yeseo-ko">click here</a>
+        <h2>Never let your memories be<br>
+          greater than your dreams.</h2>
+        <a href="https://github.com/yeseo-ko">GitHub로 이동</a>
       </div>
      </section>
 
@@ -165,10 +189,18 @@
     <!-- 연락처 -->
       <section>
         <div class="contact">
+          
+            <span></span>
             <p>언제나 기다리고 있겠습니다.</p>
-            <div class="button">
-              <a href="#none">카카오톡으로 문의</a>
-              <a href="#none">이메일로 문의</a>
+          <!-- 버튼디자인 -->
+            <div class="btns">
+              <button class-"btn-1" href="#none">
+                <i class="far fa-comment-dots"></i>
+                카카오톡으로 문의
+              </button>
+              <button class-"btn-2" href="#none">
+                <i class="far fa-envelope"></i>이메일로 문의
+              </button>
             </div>    
         </div>
       </section>
