@@ -8,9 +8,22 @@
 /* 네비게이션 */
 header{
     position: absolute;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
+    transition: 0.5s;
+    
 }
+/*  */
+.active .gnb li a{
+    color: #000;
+   
+}
+.active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+    background: #fff;
+    z-index: 100;
+}
+
 nav{
     display:flex;
     width: 1280px;
@@ -40,7 +53,7 @@ nav{
     width: 72px;
     height: 55px;
     margin-left:20px;
-    /* border: 1px solid #000; */
+   
 
 }
 /* 메인이미지 */
@@ -178,13 +191,17 @@ nav{
 
 /* 콜투액션  */
 .c-t-a{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #000;
 
 }
 .call-to-action{
     background: url('../images/call.jpg') no-repeat center;
     background-size: cover;
+    /* 띠배너가 중앙으로 안왔던 이유: 부모디브에 플렉스를 안줬고, 지금 디브에 width를 안쭸기 때ㅔ문 */
+    width: 100%;
     height: 450px;
     position: relative;
     display: flex;
@@ -214,8 +231,47 @@ nav{
     color: #fff;
     z-index: 1;
 }
-
-
+/* 콜투액션 깃허브 바로가기 버튼 */
+.btn {
+    z-index: 2;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #472fa7;
+    border-radius: 0.6em;
+    color: #472fa7;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+.first {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .first:hover {
+    box-shadow: 0 0 40px 40px #472fa7 inset;
+  }
+  
 /* 프로젝트 */
 .pro{
     background:
@@ -228,23 +284,14 @@ nav{
     justify-content: center;
 }
 
-/* 프로젝트 슬라이더 */
-.responsive div{
-    width: 1000px;
-    height: 700px;
-    padding-right: 20px;
-    border-radius: 0 10% 0 10%;
-    border: 1px solid rgb(247, 117, 117);
-}
-
 /* 공부 */
-.studies{
+.skill{
    
     display: flex;
     justify-content: center;
     border: 1px solid #000;
 }
-.studies div{
+.skill div{
     width: 200px;
     height: 300px;
     border: 1px solid #000;
@@ -273,23 +320,39 @@ nav{
     background-size: 30px 40px;
 }
 
-/* 버튼디자인 */
+/* contact 버튼디자인 */
 .btns{
     margin-top: 17px ;
 }
-button{
+.btn-1, .btn-2{
     display: inline-block;
-    padding: 10px;
-    width: 200px;
+    padding: 12px;
+    width: 180px;
     margin: 10px;
     text-align: center;
     border-radius: 20px;
     color: #fff;
+    background: inherit;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow:none; cursor:pointer;}
+.btns i{
+    padding-right: 7px;
 }
-button{
-    background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer}
-    
-button i{
+/* GoToTop top버튼 */
+.GoToTop{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #a72f97, #7641bc);
+    /* 폰트어썸은 폰트속성 */
     color: #fff;
-    padding-right: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    /* 스크롤효과*/
+    /* transition의 기본 속기값은 duration */
+    transition: 0.5s;
 }

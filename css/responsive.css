@@ -1,0 +1,22 @@
+/* width 가 px이면 상대비율(%)로 바꾼다. */
+@media(max-width: 768px){
+    .aboutme{
+        flex-direction: column;
+
+    }
+
+    .projects{
+        flex-direction: column;
+
+    }
+    .heading h1{
+        font-size: 24px;
+       
+    }
+    nav{
+        
+        width: 100%;
+       
+    
+    }
+}

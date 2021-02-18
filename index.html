@@ -6,20 +6,17 @@
     <title>유예서 포트폴리오</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="shortcut icon" href="./images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-    
-    
     <script src="./js/jquery-3.5.1.min.js"></script>
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <script src="./js/custom.js"></script>
-
+    <script src="./js/gnb.js"></script>
 
   </head>
   <body>
@@ -31,11 +28,11 @@
                 <a href="#none"><img src="./images/logo2.png" alt="logo"></a>
             </div>
             <ul class="gnb">
-                <li><a href="#none">Home</a></li>
+                  <li><a href="#none">Home</a></li>
                   <li><a href="#none">About Me</a></li>
                   <li><a href="#none">Project</a></li>
-                  <li><a href="#none">call-to-action</a></li>
-                  <li><a href="#none">Study</a></li>
+                  <li><a href="#none">GitHub</a></li>
+                  <li><a href="#none">Skill</a></li>
                   <li><a href="#none">Contact Me</a></li>
             </ul>
         </nav>
@@ -109,7 +106,6 @@
         <div class="contents">
           <h1>프로젝트</h1>
           <div class="projects">
-            <div class="responsive">
               <div class="project">
                 <span>2020</span>
                 <h3>젤라또팩토리</h3>
@@ -157,7 +153,7 @@
                 </p>
                 <span>프로젝트 살펴보기</span>
               </div>
-            </div>
+
           </div>
       </div>
     </section>
@@ -168,16 +164,17 @@
       <div class="call-to-action">
         <h2>Never let your memories be<br>
           greater than your dreams.</h2>
-        <a href="https://github.com/yeseo-ko">GitHub로 이동</a>
+        <!-- <a href="https://github.com/yeseo-ko">GitHub로 이동</a> -->
+        <button class="btn first">GitHub로 이동</button>
       </div>
      </section>
 
 
-    <!-- 공부 -->
-      <section>
+    <!-- 스킬 -->
+      <section class="FullScree skills">
         <div class="contents">
-          <h2>Study</h2>
-          <div class="studies">
+          <h2>Skill</h2>
+          <div class="skill">
             <div>1</div>
             <div>2</div>
             <div>3</div>
@@ -194,20 +191,24 @@
             <p>언제나 기다리고 있겠습니다.</p>
           <!-- 버튼디자인 -->
             <div class="btns">
-              <button class-"btn-1" href="#none">
+              <button class="btn-1" href="#none">
                 <i class="far fa-comment-dots"></i>
                 카카오톡으로 문의
               </button>
-              <button class-"btn-2" href="#none">
+              <button class="btn-2" href="#none">
                 <i class="far fa-envelope"></i>이메일로 문의
               </button>
             </div>    
         </div>
       </section>
 
+      
       <footer>
-
+        
       </footer>
     </div>
+    <!-- GoToTop -->
+    <!-- #은 맨위로 가는 속성ㅋ -->
+    <a class='GoToTop' href="#"><i class="fas fa-angle-up"></i></a>
   </body>
 </html>
