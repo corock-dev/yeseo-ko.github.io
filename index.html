@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/typing.css">
     <link rel="shortcut icon" href="./images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
@@ -17,6 +18,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/projects.js"></script>
     <script src="./js/gnb.js"></script>
+    <script src="./js/typing.js"></script>
 
   </head>
   <body>
@@ -28,10 +30,10 @@
                 <a href="#none"><img src="./images/logo2.png" alt="logo"></a>
             </div>
             <ul class="gnb">
-                  <li><a href="#none">Home</a></li>
-                  <li><a href="#none">About Me</a></li>
-                  <li><a href="#none">Project</a></li>
-                  <li><a href="#none">GitHub</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#aboutme">About Me</a></li>
+                  <li><a href="#projects">Project</a></li>
+                  <li><a href="#whoami">GitHub</a></li>
                   <li><a href="#none">Skill</a></li>
                   <li><a href="#none">Contact Me</a></li>
             </ul>
@@ -42,7 +44,13 @@
       <main class="home">
         <div class="contents">
             <div class="heading">
-                <h1>Welcome, This is YeSeo world.</h1>
+              <div class="typing-txt"> 
+                <ul>
+                  <li>Welcome, This is YeSeo world.</li>
+              </ul>
+              </div> 
+              <p class="typing"></p> 
+                <!-- <h1>Welcome, This is YeSeo world.</h1> -->
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
@@ -51,7 +59,7 @@
 <!-- aboutme -->
       <section class="FullScreen s2">
         <div class="contents">
-            <div class="aboutme">
+            <div class="aboutme" id="aboutme">
               <!-- 프로필사진영역 -->
                 <div class="photo">
                     <img src="./images/me.jpg" alt="me">
@@ -105,7 +113,7 @@
       <section class="FullScreen pro" >
         <div class="contents">
           <h1>프로젝트</h1>
-          <div class="projects">
+          <div class="projects" id="projects">
               <div class="project">
                 <span>2020</span>
                 <h3>젤라또팩토리</h3>
